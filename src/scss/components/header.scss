@@ -1,5 +1,5 @@
 .header {
-  background: #f2eee4;
+  background: #10100e;
   padding: 6px 0;
   position: fixed;
   width: 100%;
@@ -45,11 +45,11 @@
 }
 
 .nav-list-link {
-  font-family: 'Playfair Display', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.5;
-  color: #422e1b;
+  color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -73,11 +73,11 @@
 }
 
 .menu-icon {
-  stroke: #422e1b;
+  stroke: #fff;
 }
 
 .close-icon {
-  fill: #422e1b;
+  fill: #fff;
 }
 
 .close-btn {

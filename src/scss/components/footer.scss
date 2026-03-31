@@ -1,5 +1,5 @@
 .footer {
-  background: #422e1b;
+  background: #000;
   padding-top: 40px;
   padding-bottom: 16px;
 
@@ -44,11 +44,11 @@
 }
 
 .footer-nav-list-link {
-  font-family: 'Playfair Display', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  color: #f2eee4;
+  color: #eee66f;
 
   @include media(desktop) {
     font-size: 18px;
@@ -66,11 +66,11 @@
 }
 
 .footer-link {
-  font-family: 'Playfair Display', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  color: #f2eee4;
+  color: #eee66f;
   transition: color 0.3s ease-in-out;
 
   @include media(desktop) {
@@ -83,12 +83,12 @@
 }
 
 .footer-bottom-text {
-  font-family: 'Playfair Display', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 11px;
   line-height: 1.5;
   text-align: right;
-  color: #f2eee4;
+  color: #eee66f;
 
   @include media(desktop) {
     font-size: 12px;
