@@ -4,16 +4,22 @@
 }
 
 .features-bg-wrapper {
-  padding-top: 48px;
-  padding-bottom: 48px;
+  padding-top: 80px;
+  padding-bottom: 235px;
   max-width: 375px;
   margin-left: auto;
   margin-right: auto;
+  background-image: url(../img/features/features-bg-mob.png);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: auto;
 
   @include media(desktop) {
     padding-top: 80px;
     padding-bottom: 80px;
     max-width: 1440px;
+    background-image: url(../img/features/features-bg-desk.png);
+    background-position: center left;
   }
 }
 
@@ -23,21 +29,14 @@
 }
 
 .features-content-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 48px;
-
   @include media(desktop) {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: start;
   }
 }
 
 .features-text-wrapper {
   @include media(desktop) {
-    max-width: max-content;
+    max-width: 544px;
+    margin-left: auto;
   }
 }
 
@@ -51,12 +50,13 @@
   }
 }
 
-.features-text {
-  font-family: 'Playfair Display', sans-serif;
+.features-list-text {
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  color: #422e1b;
+  color: #fff;
+  margin-bottom: 16px;
 
   @include media(desktop) {
     font-size: 18px;
@@ -66,11 +66,10 @@
 .features-list {
   list-style-type: disc;
   padding-left: 25px;
+  color: #fff;
   display: flex;
   flex-direction: column;
-  color: #422e1b;
-  margin-top: 16px;
-  margin-bottom: 16px;
+  margin-bottom: 24px;
 
   @include media(desktop) {
   }
@@ -82,19 +81,25 @@
 }
 
 .features-item-text {
-  font-family: 'Playfair Display', sans-serif;
-  font-weight: 500;
-  font-size: 18px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
   line-height: 1.5;
-  color: #422e1b;
+  color: #fff;
 
   @include media(desktop) {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
-.features-img {
+.features-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #fff;
+
   @include media(desktop) {
-    min-width: 447px;
+    font-size: 18px;
   }
 }

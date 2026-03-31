@@ -4,16 +4,22 @@
 }
 
 .gameplay-bg-wrapper {
-  padding-top: 48px;
-  padding-bottom: 48px;
+  padding-top: 60px;
+  padding-bottom: 277px;
   max-width: 375px;
   margin-left: auto;
   margin-right: auto;
+  background-image: url(../img/gameplay/gameplay-bg-mob.png);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: auto;
 
   @include media(desktop) {
     padding-top: 80px;
     padding-bottom: 80px;
     max-width: 1440px;
+    background-image: url(../img/gameplay/gameplay-bg-desk.png);
+    background-position: center right;
   }
 }
 
@@ -23,21 +29,12 @@
 }
 
 .gameplay-content-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 48px;
-
   @include media(desktop) {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: start;
   }
 }
 
 .gameplay-text-wrapper {
   @include media(desktop) {
-    max-width: max-content;
   }
 }
 
@@ -51,20 +48,73 @@
   }
 }
 
-.gameplay-text {
-  font-family: 'Playfair Display', sans-serif;
+.gameplay-list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-bottom: 32px;
+
+  @include media(desktop) {
+    flex-direction: row;
+    margin-bottom: 24px;
+  }
+}
+
+.gameplay-list-wrapper {
+  @include media(desktop) {
+  }
+}
+
+.gameplay-list-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #fff;
+  margin-bottom: 16px;
+
+  @include media(desktop) {
+    font-size: 20px;
+  }
+}
+
+.gameplay-list {
+  list-style-type: disc;
+  padding-left: 25px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+
+  @include media(desktop) {
+    max-width: max-content;
+  }
+}
+
+.gameplay-list-item {
+  @include media(desktop) {
+  }
+}
+
+.gameplay-item-text {
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  color: #422e1b;
+  color: #fff;
 
   @include media(desktop) {
     font-size: 18px;
   }
 }
 
-.gameplay-img {
+.gameplay-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #fff;
+
   @include media(desktop) {
-    min-width: 447px;
+    font-size: 18px;
   }
 }

@@ -3,4 +3,4 @@ Disallow: /admin/
 Disallow: /private/
 Allow: /
 
-Sitemap: https://softnotch.online/sitemap.xml
+Sitemap: https://ironmeadow.space/sitemap.xml

@@ -18,10 +18,8 @@ reviewsSwiper = new Swiper('.reviews-swiper-container', {
   breakpoints: {
     1440: {
       centeredSlides: false,
-      slidesPerView: 6,
-      spaceBetween: 0,
-      allowTouchMove: false,
-      grabCursor: false,
+      slidesPerView: 'auto',
+      spaceBetween: 32,
     },
   },
 

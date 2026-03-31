@@ -4,17 +4,22 @@
 }
 
 .reviews-bg-wrapper {
-  padding-top: 48px;
-  padding-bottom: 48px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   max-width: 375px;
   margin-left: auto;
   margin-right: auto;
   overflow: hidden;
+  background-image: url(../img/reviews/reviews-bg-mob.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
 
   @include media(desktop) {
     padding-top: 80px;
     padding-bottom: 80px;
     max-width: 1440px;
+    background-image: url(../img/reviews/reviews-bg-desk.png);
   }
 }
 
@@ -27,7 +32,10 @@
 }
 
 .reviews-title {
+  margin-bottom: 64px;
+
   @include media(desktop) {
+    margin-bottom: 80px;
   }
 }
 
@@ -47,19 +55,10 @@
 
 .reviews-swiper-wrapper {
   @include media(desktop) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 32px;
-    width: 100%;
   }
 }
 
 .reviews-slide {
-  box-shadow: inset 1px 2px 6px 0 rgba(0, 0, 0, 0.25);
-  background: #f5f2e9;
-  border-radius: 16px;
-  padding: 16px 24px;
   display: flex !important;
   flex-direction: column;
   gap: 16px;
@@ -72,27 +71,25 @@
 }
 
 .reviews-item-text {
-  font-family: 'Playfair Display', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: italic;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.5;
-  color: #422e1b;
+  color: #fff;
 
   @include media(desktop) {
-    font-size: 18px;
   }
 }
 
 .reviews-item-name {
-  font-family: 'Playfair Display', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.5;
   text-align: right;
-  color: #422e1b;
+  color: #fff;
 
   @include media(desktop) {
-    font-size: 20px;
   }
 }
